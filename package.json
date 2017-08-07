@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "electron .",
-    "pkg": "electron-packager . Updater --platform=darwin,win32 --arch=ia32 --asar --overwrite --out=appdist --app-bundle-id=com.sanrokugomaato.updater --icon=icon/icon"
+    "pkg": "electron-packager . Updater --platform=win32,darwin --arch=ia32,x64 --asar --overwrite --out=appdist --app-bundle-id=com.sanrokugomaato.updater --icon=icon/icon"
   },
   "repository": {
     "type": "git",
