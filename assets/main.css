@@ -14,14 +14,14 @@ pre {
     overflow: auto;
 }
 
-.path {
+#path {
     box-sizing: border-box;
     height: 25px;
     line-height: 25px;
     padding: 0 3px;
     border: 1px solid black;
     background-color: #fefefe;
-    width: calc(100% - 100px);
+    width: calc(100% - 140px);
     float: left;
     color: #999;
 }
@@ -31,11 +31,16 @@ button {
     line-height: 25px;
     padding: 0;
     border: 1px solid black;
-    width: 95px;
+    width: 67px;
     float: right;
     background-color: #ddd;
+    margin-left: 2px;
 }
 
 button:hover {
     background-color: #aaa;
+}
+
+#patch {
+    color: red;
 }

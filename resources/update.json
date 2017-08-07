@@ -4,5 +4,13 @@
   "changelog": "This is CHANGELOG.\nWe fixed this and fixed that.\nblahblah.",
   "extraText": "Here are some texts",
   "placeholder": "Please select App.exe or App.app",
-  "button": "Find"
+  "buttons": {
+    "find": "Find",
+    "patch": "Patch!"
+  },
+  "errors": {
+    "invalidPath": "Invalid Electron app path",
+    "noPath": "No path is set",
+    "patchFail": "Patch failed because of intenral error"
+  }
 }
