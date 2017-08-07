@@ -1,0 +1,41 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+}
+
+pre {
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 120px;
+    overflow: auto;
+}
+
+.path {
+    box-sizing: border-box;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 3px;
+    border: 1px solid black;
+    background-color: #fefefe;
+    width: calc(100% - 100px);
+    float: left;
+    color: #999;
+}
+
+button {
+    height: 25px;
+    line-height: 25px;
+    padding: 0;
+    border: 1px solid black;
+    width: 95px;
+    float: right;
+    background-color: #ddd;
+}
+
+button:hover {
+    background-color: #aaa;
+}

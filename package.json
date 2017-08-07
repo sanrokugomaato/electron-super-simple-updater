@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "A super simple local updater for Electron, just with replacing app.asar",
   "main": "index.js",
+  "scripts": {
+    "dev": "electron ."
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sanrokugomaato/electron-super-simple-updater.git"
@@ -11,5 +14,8 @@
   "bugs": {
     "url": "https://github.com/sanrokugomaato/electron-super-simple-updater/issues"
   },
-  "homepage": "https://github.com/sanrokugomaato/electron-super-simple-updater"
+  "homepage": "https://github.com/sanrokugomaato/electron-super-simple-updater",
+  "devDependencies": {
+    "electron": "^1.6.11"
+  }
 }

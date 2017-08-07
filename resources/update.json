@@ -1,0 +1,8 @@
+{
+  "title": "Test Updater",
+  "description": "This is a test updater",
+  "changelog": "This is CHANGELOG.\nWe fixed this and fixed that.\nblahblah.",
+  "extraText": "Here are some texts",
+  "placeholder": "Please select App.exe or App.app",
+  "button": "Find"
+}
