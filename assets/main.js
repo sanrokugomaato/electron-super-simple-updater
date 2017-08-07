@@ -17,10 +17,6 @@ const updater = rr('./updater');
 
 $('#find').addEventListener('click', () => {
     dialog.showOpenDialog({
-        properties: [
-            'openFile',
-            'openDirectory',
-        ],
     }, ([path]) => {
         if (!updater.isValidElectronAppPath(path)) {
             alert(`${data.messages.invalidPath}: ${path}`);
