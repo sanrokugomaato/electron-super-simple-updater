@@ -1,0 +1,15 @@
+{
+  "name": "electron-super-simple-updater",
+  "version": "0.1.0",
+  "description": "A super simple local updater for Electron, just with replacing app.asar",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanrokugomaato/electron-super-simple-updater.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sanrokugomaato/electron-super-simple-updater/issues"
+  },
+  "homepage": "https://github.com/sanrokugomaato/electron-super-simple-updater"
+}
