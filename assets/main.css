@@ -10,8 +10,9 @@ body {
 pre {
     border: 1px solid #ddd;
     padding: 10px;
-    height: 120px;
+    height: 100px;
     overflow: auto;
+    white-space: pre-line;
 }
 
 #path {
@@ -24,6 +25,7 @@ pre {
     width: calc(100% - 140px);
     float: left;
     color: #999;
+    overflow: hidden;
 }
 
 button {
