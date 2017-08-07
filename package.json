@@ -4,7 +4,8 @@
   "description": "A super simple local updater for Electron, just with replacing app.asar",
   "main": "index.js",
   "scripts": {
-    "dev": "electron ."
+    "dev": "electron .",
+    "pkg": "electron-packager . Updater --platform=darwin,win32 --arch=ia32 --asar --overwrite --out=appdist --app-bundle-id=com.sanrokugomaato.updater --icon=icon/icon"
   },
   "repository": {
     "type": "git",
@@ -16,6 +17,7 @@
   },
   "homepage": "https://github.com/sanrokugomaato/electron-super-simple-updater",
   "devDependencies": {
-    "electron": "^1.6.11"
+    "electron": "^1.6.11",
+    "electron-packager": "^8.7.2"
   }
 }
