@@ -23,7 +23,7 @@ $('#find').addEventListener('click', () => {
         ],
     }, ([path]) => {
         if (!updater.isValidElectronAppPath(path)) {
-            alert(`${data.errors.invalidPath}: ${path}`);
+            alert(`${data.messages.invalidPath}: ${path}`);
             return;
         }
 
@@ -35,19 +35,21 @@ $('#patch').addEventListener('click', () => {
     const path = $('#path').textContent.trim();
 
     if (!path || path === data.placeholder) {
-        alert(`${data.errors.noPath}`);
+        alert(data.messages.noPath);
         return;
     }
 
     if (!updater.isValidElectronAppPath(path)) {
-        alert(`${data.errors.invalidPath}: ${path}`);
+        alert(`${data.messages.invalidPath}: ${path}`);
         return;
     }
 
     const success = updater.commit(path);
 
     if (success) {
+        alert(data.messages.success);
+        updater.exit();
     } else {
-        alert(`${data.errors.patchFail}`);
+        alert(data.messages.patchFail);
     }
 });

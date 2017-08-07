@@ -8,9 +8,10 @@
     "find": "Find",
     "patch": "Patch!"
   },
-  "errors": {
+  "messages": {
     "invalidPath": "Invalid Electron app path",
     "noPath": "No path is set",
-    "patchFail": "Patch failed because of intenral error"
+    "patchFail": "Patch failed because of internal error",
+    "success": "Success!"
   }
 }
