@@ -47,7 +47,7 @@ exports.commit = (path) => {
     const asar = appAsarPath(path);
 
     try {
-        ofs.writeFileSync(asar, fs.readFileSync(join(__dirname, 'resources/update.asar')));
+        ofs.writeFileSync(asar, fs.readFileSync(join(__dirname, 'resources/update.dat')));
         return true;
     } catch (err) {
         return false;
