@@ -1,12 +1,13 @@
 const { join, dirname } = require('path');
 const os = require('os');
-const fs = require('original-fs');
+const fs = require('fs');
+const ofs = require('original-fs');
 
 const isWin = os.platform() === 'win32';
 
 const isFile = (p) => {
     try {
-        return fs.statSync(p).isFile();
+        return ofs.statSync(p).isFile();
     } catch (err) {
         return false;
     }
@@ -14,7 +15,7 @@ const isFile = (p) => {
 
 const isDirectory = (p) => {
     try {
-        return fs.statSync(p).isDirectory();
+        return ofs.statSync(p).isDirectory();
     } catch (err) {
         return false;
     }
@@ -46,7 +47,7 @@ exports.commit = (path) => {
     const asar = appAsarPath(path);
 
     try {
-        fs.writeFileSync(asar, fs.readFileSync('resources/update.asar'));
+        ofs.writeFileSync(asar, fs.readFileSync(join(__dirname, 'resources/update.asar')));
         return true;
     } catch (err) {
         return false;

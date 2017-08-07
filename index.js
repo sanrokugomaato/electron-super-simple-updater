@@ -6,7 +6,7 @@ const { readFileSync } = require('fs');
 let update;
 
 try {
-    update = JSON.parse(readFileSync('resources/update.json'));
+    update = JSON.parse(readFileSync(join(__dirname, 'resources/update.json')));
 } catch (err) {
     throw new Error('invalid update.json');
 }
